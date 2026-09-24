@@ -1,19 +1,22 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public class BridScript : MonoBehaviour
 {
-    public Rigidbody2D myRigidBody2D;
+    public Rigidbody2D rigidbody2D;
+    public float flapStreangth = 12;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
-
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            rigidbody2D.linearVelocity = Vector2.up * flapStreangth;
+        }
     }
 }

@@ -130,8 +130,8 @@ GameObject:
   - component: {fileID: 354065543}
   - component: {fileID: 354065542}
   - component: {fileID: 354065541}
-  - component: {fileID: 354065540}
   - component: {fileID: 354065539}
+  - component: {fileID: 354065540}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -178,6 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2e05090f749477282ab5ba9b01519d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  rigidbody2D: {fileID: 354065539}
+  flapStreangth: 7
 --- !u!58 &354065541
 CircleCollider2D:
   m_ObjectHideFlags: 0
